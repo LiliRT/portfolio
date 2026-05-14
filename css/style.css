@@ -1,0 +1,179 @@
+/* ===== THÈME ===== */
+
+:root {
+    --primary: #7C3AED;
+    --primary-dark: #5B21B6;
+
+    --bg: #F8F7FF;
+    --bg-alt: #EEE9FF;
+
+    --text: #1F2937;
+    --text-light: #6B7280;
+
+    --card: #FFFFFF;
+
+    --radius: 1.2rem;
+
+    --transition: 0.3s ease;
+}
+
+
+/* ===== BASE ===== */
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+    background-color: rgba(248, 247, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+    color: var(--primary);
+}
+
+.nav-link {
+    color: var(--text);
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+
+/* ===== HERO ===== */
+
+#hero {
+    padding-top: 100px;
+}
+
+#hero h1 {
+    color: var(--text);
+}
+
+#hero .lead {
+    color: var(--text-light);
+    max-width: 600px;
+}
+
+
+/* ===== BOUTONS ===== */
+
+.btn-primary {
+    background-color: var(--primary);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-outline-light {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline-light:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+
+/* ===== SECTIONS ===== */
+
+.py-section {
+    padding: 6rem 0;
+}
+
+.bg-section-alt {
+    background-color: var(--bg-alt);
+}
+
+
+/* ===== TITRES ===== */
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.section-divider {
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary);
+    border-radius: 999px;
+}
+
+
+/* ===== CARDS ===== */
+
+.feature-card,
+.case-card {
+    background-color: var(--card);
+    border: none;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+
+    transition: var(--transition);
+}
+
+.feature-card:hover,
+.case-card:hover {
+    transform: translateY(-6px);
+}
+
+
+/* ===== PROJETS ===== */
+
+.card-placeholder {
+    height: 180px;
+}
+
+/* gradients différents */
+.bg-gradient-1 {
+    background: linear-gradient(135deg, #7C3AED, #A78BFA);
+}
+
+.bg-gradient-2 {
+    background: linear-gradient(135deg, #2563EB, #60A5FA);
+}
+
+.bg-gradient-3 {
+    background: linear-gradient(135deg, #EC4899, #F9A8D4);
+}
+
+.bg-gradient-4 {
+    background: linear-gradient(135deg, #10B981, #6EE7B7);
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    border-top: 1px solid #ddd;
+}
+
+
+/* ===== LIENS SOCIAUX ===== */
+
+.social-link {
+    color: var(--text-light);
+    font-size: 1.4rem;
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    color: var(--primary);
+}
