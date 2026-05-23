@@ -36,6 +36,10 @@ html {
     margin-top: 1.5rem;
 }
 
+h1 {
+    color: var(--primary);
+}
+
 h2 {
     margin-bottom: var(--space-2);
 }
@@ -98,6 +102,10 @@ h2 {
 .navbar img {
     height: 3rem;
     width: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--secondary);
+    box-shadow: 0 3px 4px var(--dark);
 }
 
 /* Section */
@@ -125,6 +133,7 @@ section,
     transition: 0.3s;
     padding: var(--space-3);
     border-radius: 12px;
+    font-size: var(--text-lg);
 }
 
 .feature-card {
@@ -135,10 +144,13 @@ section,
     background-color: var(--light);
 }
 
+.case-card a {
+    color: inherit;
+}
+
 .feature-card i,
 .case-card i {
     color: var(--primary);
-    font-size: var(--text-xl);
 }
 
 .feature-card:hover,
@@ -154,18 +166,25 @@ section,
     border-radius: 999px;
 }
 
+.card-img {
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+
+}
+
 /* Hero */
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 0;
+    padding-left: 5rem;
     background: linear-gradient(150deg, var(--white), var(--secondary));
 }
 
 .hero-img {
-    width: 220;
-    height: 220;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 10px 30px var(--dark);
@@ -195,7 +214,7 @@ footer {
     color: var(--dark);
 }
 
-footer h6 {
+footer h5 {
     color: var(--primary);
     margin-bottom: 1rem;
 }
@@ -213,4 +232,127 @@ footer a:hover {
 .footer-logo {
     height: 2.5rem;
     margin-right: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--secondary);
+    box-shadow: 0 3px 4px var(--dark);
+}
+
+.footer-brand {
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--text-lg);
+    color: var(--primary);
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 0.75rem 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .navbar img {
+        height: 2.5rem;
+    }
+
+    .navbar-collapse {
+        background-color: var(--white);
+        padding: 1rem;
+        border-radius: 1rem;
+        margin-top: 1rem;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .dropdown-menu.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: auto;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        text-align: center;
+    }
+
+    .hero .row {
+        gap: 3rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .lead {
+        font-size: 1rem;
+    }
+
+    .hero-img {
+        width: 170px;
+        height: 170px;
+    }
+
+    /* Sections */
+    section {
+        padding: 4rem 0;
+        margin: 0 1rem;
+    }
+
+    /* Headers */
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    /* Cards */
+    .feature-card,
+    .case-card {
+        margin: 1.5rem;
+    }
+
+    .case-card .row {
+        gap: 2rem;
+    }
+
+    .card-img {
+        min-height: 220px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* Boutons */
+    .btn-primary-custom {
+        display: inline-block;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 1rem;
+    }
+
 }
