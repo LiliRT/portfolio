@@ -18,6 +18,7 @@
     --space-3: 2rem;
     --space-4: 4rem;
     --space-5: 6rem;
+    --space-6: 10rem;
 }
 
 /* Base */
@@ -110,7 +111,7 @@ h2 {
 
 /* Section */
 section {
-    padding: var(--space-5) 0;
+    padding: var(--space-5) var(--space-6);
 }
 
 section, 
@@ -171,6 +172,10 @@ section,
     border-radius: 50%;
     border: 2px solid var(--white);
 
+}
+
+.case-reverse .project-content {
+    text-align: right;
 }
 
 /* Hero */
