@@ -160,12 +160,7 @@ section,
     display: flex;
     align-items: center;
     padding: 0;
-    /* background-color: var(--light); */
-    /* background: linear-gradient(180deg, var(--secondary), var(--white)); */
-    /* background: linear-gradient(180deg, var(--light), var(--white)); */
-    /* background: linear-gradient(180deg, var(--white), var(--secondary)); */
     background: linear-gradient(150deg, var(--white), var(--secondary));
-    /* background: linear-gradient(180deg, var(--white), var(--light)); */
 }
 
 .hero-img {
