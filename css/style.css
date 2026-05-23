@@ -183,7 +183,7 @@ section,
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-left: 5rem;
+    padding: var(--space-5) var(--space-6);
     background: linear-gradient(150deg, var(--white), var(--secondary));
 }
 
