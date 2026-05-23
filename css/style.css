@@ -272,21 +272,10 @@ footer a:hover {
         margin-top: 1rem;
     }
 
-    .dropdown:hover .dropdown-menu {
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    .dropdown-menu.show {
-        opacity: 1;
-        visibility: visible;
-    }
-
     /* Hero */
     .hero {
         min-height: auto;
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+        padding: 4rem 0;
         text-align: center;
     }
 
