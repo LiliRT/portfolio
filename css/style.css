@@ -33,8 +33,7 @@ html {
 }
 
 .icon {
-    margin-left: 1.5rem;
-    margin-top: 1.5rem;
+    display: inline-block;
 }
 
 h1 {
@@ -43,6 +42,10 @@ h1 {
 
 h2 {
     margin-bottom: var(--space-2);
+}
+
+h5 {
+    color: var(--primary);
 }
 
 /* Navbar */
@@ -161,6 +164,11 @@ section,
     box-shadow: 0 6px 15px var(--dark);
 }
 
+.dark-card .row,
+.light-card .row {
+    align-items: center;
+}
+
 .badge {
     background-color: var(--accent);
     font-size: var(--text-sm);
@@ -236,11 +244,6 @@ footer {
     padding: 3rem 0;
     color: var(--dark);
     border-top: 2px solid var(--white);
-}
-
-footer h5 {
-    color: var(--primary);
-    margin-bottom: 1rem;
 }
 
 footer a {
@@ -333,7 +336,10 @@ footer a:hover {
     /* Sections */
     section {
         padding: 4rem 0;
-        margin: 0 1rem;
+    }
+
+    .container {
+        padding-inline: 1rem;
     }
 
     /* Headers */
@@ -354,7 +360,7 @@ footer a:hover {
     /* Cards */
     .light-card,
     .dark-card {
-        margin: 1.5rem;
+        margin: 0.5rem 1rem;
     }
 
     .dark-card .row {
@@ -367,6 +373,11 @@ footer a:hover {
         object-fit: cover;
     }
 
+    .dark-card .col-md-4,
+    .light-card .col-md-5 {
+        margin-bottom: 0 !important;
+    }
+
     /* Boutons */
     .btn-primary-custom {
         display: inline-block;
@@ -376,7 +387,8 @@ footer a:hover {
 
     /* Footer */
     footer {
-        text-align: center;
+        /* text-align: center; */
+        padding: 2rem;
     }
 
     .footer-logo {
