@@ -128,8 +128,8 @@ section,
 }
 
 /* Card */
-.feature-card,
-.case-card {
+.light-card,
+.dark-card {
     border: none;
     transition: 0.3s;
     padding: var(--space-3);
@@ -137,25 +137,26 @@ section,
     font-size: var(--text-lg);
 }
 
-.feature-card {
-    background-color: white;
+.light-card {
+    background-color: var(--white);
 }
 
-.case-card {
+.dark-card {
     background-color: var(--light);
 }
 
-.case-card a {
+.light-card a,
+.dark-card a {
     color: inherit;
 }
 
-.feature-card i,
-.case-card i {
+.light-card i,
+.dark-card i {
     color: var(--primary);
 }
 
-.feature-card:hover,
-.case-card:hover {
+.light-card:hover,
+.dark-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 15px var(--dark);
 }
@@ -180,11 +181,12 @@ section,
 
 /* Hero */
 .hero {
-    min-height: 100vh;
+    min-height: 92vh;
     display: flex;
     align-items: center;
     padding: var(--space-5) var(--space-6);
     background: linear-gradient(150deg, var(--white), var(--secondary));
+    position: relative;
 }
 
 .hero-img {
@@ -210,6 +212,22 @@ section,
 
 .btn-primary-custom:hover {
     background-color: var(--secondary);
+}
+
+.hero-scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 3.5rem;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: var(--primary);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.hero-scroll:hover {
+    transform: translateX(-50%) translateY(5px);
+    color: var(--accent);
 }
 
 /* Footer */
@@ -306,6 +324,12 @@ footer a:hover {
         height: 170px;
     }
 
+    .hero-scroll {
+        font-size: 1.5rem;
+        bottom: 1rem;
+        opacity: 0.7;
+    }
+
     /* Sections */
     section {
         padding: 4rem 0;
@@ -328,12 +352,12 @@ footer a:hover {
     }
 
     /* Cards */
-    .feature-card,
-    .case-card {
+    .light-card,
+    .dark-card {
         margin: 1.5rem;
     }
 
-    .case-card .row {
+    .dark-card .row {
         gap: 2rem;
     }
 
