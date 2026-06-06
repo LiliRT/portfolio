@@ -178,9 +178,14 @@ section,
 
 .card-img {
     object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid var(--white);
+    border-radius: 16px;
+    border: 1px solid var(--primary);
 
+}
+
+.design .card-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px var(--dark);
 }
 
 .case-reverse .project-content {
@@ -278,6 +283,15 @@ footer a:hover {
     align-items: center;
     padding: var(--space-5) var(--space-6);
     background: linear-gradient(150deg, var(--white), var(--secondary));
+}
+
+.design a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.design a:hover {
+    text-decoration: underline;
 }
 
 /* Mockups images */
